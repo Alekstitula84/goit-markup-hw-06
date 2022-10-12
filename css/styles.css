@@ -859,17 +859,34 @@ ol {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox {
+/* .checkbox {
   display: flex;
   align-items: center;
-  justify-content: left;
+  gap: 7px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.checkbox-input {
+  -webkit-appearance: none;
+}
+
+.checkbox-icon {
+  display: block;
+  border: 1px solid var(--text-nav-link-color);
+  border-radius: 2px;
+  background-color: transparent;
 }
 
 .terms {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--auth-link-color);
-  padding-left: 9px;
 }
 
 .terms-link {
