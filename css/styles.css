@@ -601,12 +601,18 @@ ol {
   color: var(--hero-title-color);
 }
 
+.footer-form-label {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
 .footer-form-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   min-width: 358px;
-
+  color: var(--hero-title-color);
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -627,25 +633,7 @@ ol {
   left: 0;
 }
 
-.footer-btn {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--hero-title-color);
-  padding: 10px 28px;
-  border: none;
-  background: var(--text-nav-link-hover-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-}
+v
 
 /* ---------Portfolio-------- */
 
@@ -786,6 +774,65 @@ ol {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
+}
+.modal-form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid tomato;
+  padding-top: 40px;
+}
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.form-field input {
+  margin: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-nav-link-color);
+  margin-bottom: 12px;
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  /* transform: translateY(-50%); */
+}
+
+.modal-form-btn {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--hero-title-color);
+  padding: 10px 28px;
+  border: none;
+  background: var(--text-nav-link-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .modal-btn {
