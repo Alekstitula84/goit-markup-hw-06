@@ -808,10 +808,10 @@ ol {
   flex-direction: column;
   gap: 4px;
   margin-bottom: 10px;
+  border: none;
 }
 
 .input-text {
-  display: block;
   padding-left: 40px;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -819,9 +819,12 @@ ol {
   border-radius: 4px;
 }
 
-.form-field:focus-within .modal-form-icon + .input-text {
+.form-field:focus-within .modal-form-icon {
   fill: var(--text-nav-link-hover-color);
-  border-color: var(--text-nav-link-hover-color);
+}
+
+.form-field:focus-within .input-text {
+  border-color: #2196f3;
 }
 
 .modal-form-title {
