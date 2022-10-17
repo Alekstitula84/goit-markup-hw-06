@@ -801,6 +801,7 @@ ol {
   /* border: 1px solid tomato; */
   padding-top: 40px;
 }
+
 .form-field {
   position: relative;
   display: flex;
@@ -818,6 +819,10 @@ ol {
   border-radius: 4px;
 }
 
+.label-text input:active + .form-field {
+  border: 1px solid var(--text-nav-link-hover-color);
+}
+
 .modal-form-title {
   font-weight: 700;
   font-size: 20px;
@@ -832,6 +837,7 @@ ol {
   position: absolute;
   top: 50%;
   left: 12px;
+  fill: var(--text-nav-link-color);
   /* transform: translateY(-50%); */
 }
 
@@ -852,6 +858,7 @@ ol {
   color: var(--auth-link-color);
 }
 
+.label-text,
 .coment-field::placeholder {
   font-size: 12px;
   line-height: 1.16;
@@ -925,6 +932,12 @@ ol {
   justify-content: center;
   padding: 0;
   cursor: pointer;
+  fill: currentColor;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: var(--text-nav-link-hover-color);
 }
 
 .is-hidden {
