@@ -811,6 +811,10 @@ ol {
   border: none;
 }
 
+input,
+textarea {
+  outline: none;
+}
 .input-text {
   padding-left: 40px;
   padding-top: 11px;
@@ -852,6 +856,10 @@ ol {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 20px;
+}
+
+.form-field:focus-within .coment-field {
+  border-color: #2196f3;
 }
 
 .label-text {
