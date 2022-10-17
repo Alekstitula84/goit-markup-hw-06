@@ -819,9 +819,9 @@ ol {
   border-radius: 4px;
 }
 
-.label-text input:active + .form-field {
+/* .form-field input:focus-within {
   border: 1px solid var(--text-nav-link-hover-color);
-}
+} */
 
 .modal-form-title {
   font-weight: 700;
@@ -838,7 +838,6 @@ ol {
   top: 50%;
   left: 12px;
   fill: var(--text-nav-link-color);
-  /* transform: translateY(-50%); */
 }
 
 .coment-field {
@@ -876,7 +875,16 @@ ol {
 } */
 
 .checkbox-input {
-  -webkit-appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .checkbox-icon {
