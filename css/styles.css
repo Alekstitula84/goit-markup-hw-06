@@ -881,45 +881,45 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* .checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 7px;
-} */
-
 .terms {
   display: flex;
-  margin-left: 12px;
   margin-bottom: 30px;
-  align-items: center;
   gap: 7px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  align-items: center;
   color: var(--auth-link-color);
 }
 
 .checkbox-icon {
-  display: block;
+  display: inline-block;
+  margin-left: 12px;
+  width: 16px;
+  height: 15px;
   border: 2px solid var(--text-nav-link-color);
   border-radius: 4px;
-  background-color: transparent;
 }
 
-.checkbox-input {
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--text-nav-link-hover-color);
+  background-image: url(..//images/checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  border-color: transparent;
+}
+
+.checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .terms-link {
+  display: block;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

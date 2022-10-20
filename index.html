@@ -542,21 +542,21 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <div class="checkbox">
-            <label class="terms" for="terms_of_the_contract">
-              <svg class="checkbox-icon" width="16" height="15">
-                <use href="./images/symbol-defs.svg#icon-checkbox"></use>
-              </svg>
-              <input
-                class="checkbox-input"
-                type="checkbox"
-                name="terms_of_the_contract"
-                id="terms_of_the_contract"
-              />
-              Погоджуюся з розсилкою та приймаю
-              <a class="terms-link link" href="#">Умови договору</a>
-            </label>
-          </div>
+
+          <label class="terms" for="terms_of_the_contract">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="terms_of_the_contract"
+              id="terms_of_the_contract"
+            />
+            <svg class="checkbox-icon" width="16" height="15">
+              <use href="./images/symbol-defs.svg#icon-checkbox"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю
+            <a class="terms-link link" href="#">Умови договору</a>
+          </label>
+
           <button class="modal-form-btn" type="submit">Відправити</button>
         </form>
         <button type="button" class="modal-btn" data-modal-close>
