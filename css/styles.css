@@ -883,12 +883,32 @@ textarea {
 
 /* .checkbox {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 7px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 } */
+
+.terms {
+  display: flex;
+  margin-left: 12px;
+  margin-bottom: 30px;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--auth-link-color);
+}
+
+.checkbox-icon {
+  display: block;
+  border: 2px solid var(--text-nav-link-color);
+  border-radius: 4px;
+  background-color: transparent;
+}
 
 .checkbox-input {
   position: absolute;
@@ -897,30 +917,13 @@ textarea {
   margin: -1px;
   border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.checkbox-icon {
-  display: block;
-  border: 1px solid var(--text-nav-link-color);
-  border-radius: 2px;
-  background-color: transparent;
-}
-
-.terms {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--auth-link-color);
 }
 
 .terms-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
   color: var(--text-nav-link-hover-color);
 }
 
