@@ -479,7 +479,6 @@ ol {
 
 .footer-container {
   display: flex;
-  gap: 70px;
   align-items: baseline;
 }
 
@@ -541,6 +540,10 @@ ol {
   color: var(--text-nav-link-hover-color);
 }
 
+.footer-soc {
+  margin-left: 70px;
+}
+
 .footer-soc-title {
   display: inline-block;
   font-weight: 700;
@@ -588,6 +591,7 @@ ol {
 
 .footer-form-field {
   display: flex;
+  margin-left: 93px;
   flex-direction: column;
   gap: 20px;
 }
@@ -651,6 +655,12 @@ ol {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #188ce8;
 }
 
 /* ---------Portfolio-------- */
